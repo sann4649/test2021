@@ -251,7 +251,7 @@ def uranai(input_text):
 
   if 'name' in frame and 'birthday' not in frame:
     frame['asking'] = 'birthday' # 誕生日をたずねる    
-    return 'あなたの誕生日は？'
+    return 'あなたの誕生日wo？'
 
   if 'name' in frame and 'birthday' in frame:
     # 占います
