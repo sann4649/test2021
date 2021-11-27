@@ -261,7 +261,7 @@ def uranai(input_text):
     #return 'あなたの運勢は吉'
     
     while len(frame['birthday']) > 1:
-      frame['birthday'] = str(sum(int(x) for x in a))
+      frame['birthday'] = str(sum(int(x) for x in frame['birthday']))
       if int(frame['birthday']) % 11 == 0:
        break
       return 'なるほど。'
