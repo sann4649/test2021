@@ -14,7 +14,7 @@ def chat(text, **kw):  #チャット用の関数（ここを書き換える）
 BOT_ICON = 'https://2.bp.blogspot.com/-mRJKwyORJkQ/Wn1ZTOBrszI/AAAAAAABKKs/Bg5yjLL9RYwmfUM0pEkBA3Ky3ui0IOZWQCLcBGAs/s800/animal_smile_inu.png'
 YOUR_ICON = 'https://4.bp.blogspot.com/-SC6_6x7MQnc/Wn1ZUkdcPxI/AAAAAAABKK8/qqHVlc8E7lEGsEwJ_J8H6Gp9RvfhTX67wCLcBGAs/s800/animal_smile_neko.png'
 
-def run_chat(chat = chat, start='占いするよ', **kw):
+def run_chat(chat = chat, start='ようこそ。あなたのソウルナンバーと選ばれたお好きな色で秘められた才能を占います。', **kw):
 
   def display_bot(bot_text):
     with output.redirect_to_element('#output'):
@@ -248,6 +248,8 @@ def uranai(input_text):
   if 'name' not in frame:
     frame['asking'] = 'name' # 名前をたずねる  
     return 'まずはあなたのニックネームを入力してください。'
+  
+  return ',name,さんですね。'
 
   if 'name' in frame and 'birthday' not in frame:
     frame['asking'] = 'birthday' # 誕生日をたずねる    
