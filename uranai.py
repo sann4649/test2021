@@ -11,7 +11,7 @@ def chat(text, **kw):  #チャット用の関数（ここを書き換える）
   return 'ほ' * n
 
 # アイコンの指定
-BOT_ICON = 'https://2.bp.blogspot.com/-mRJKwyORJkQ/Wn1ZTOBrszI/AAAAAAABKKs/Bg5yjLL9RYwmfUM0pEkBA3Ky3ui0IOZWQCLcBGAs/s800/animal_smile_inu.png'
+BOT_ICON = 'https://3.bp.blogspot.com/-qbORCFE5qhk/UmTBJwEYKjI/AAAAAAAAZYY/nbjieynFcLQ/s800/job_uranaishi.png'
 YOUR_ICON = 'https://4.bp.blogspot.com/-SC6_6x7MQnc/Wn1ZUkdcPxI/AAAAAAABKK8/qqHVlc8E7lEGsEwJ_J8H6Gp9RvfhTX67wCLcBGAs/s800/animal_smile_neko.png'
 
 def run_chat(chat = chat, start='ようこそ。あなたのソウルナンバーと選ばれたお好きな色で秘められた才能を占います。', **kw):
@@ -264,7 +264,7 @@ def uranai(input_text):
       frame['birthday'] = str(sum(int(x) for x in frame['birthday']))
       if int(frame['birthday']) % 11 == 0:
        break
-      return 'なるほど。'
+      return f'あなたのソウルナンバーは{frame['birthday']}です。'
 
   return output_text
 
