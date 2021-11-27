@@ -265,7 +265,6 @@ def uranai(input_text):
       if int(frame['birthday']) % 11 == 0:
        break
       return 'なるほど。'
-     return 'frame['name']+さんのソウルナンバーは+frame['birthday']+です。'
 
   return output_text
 
