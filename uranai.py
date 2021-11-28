@@ -253,11 +253,11 @@ def uranai(input_text):
     frame['asking'] = 'birthday' # 誕生日をたずねる
     return '次に生年月日を半角数字8桁で入力してください。例:2000年1月10日の場合20000110と入力してください。)'
   
- def soulnumber(s):
-      while len(s) > 1:
-        s = str(sum(int(x) for x in frame['birthday']))
-        if int(s) % 11 == 0:
-          break
+  def soulnumber(s):
+    while len(s) > 1:
+      s = str(sum(int(x) for x in frame['birthday']))
+      if int(s) % 11 == 0:
+        break
  
   if 'name' in frame and 'birthday' in frame and 'color' not in frame:
     frame['asking'] = 'color' # 色をたずねる
