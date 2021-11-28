@@ -261,11 +261,11 @@ def uranai(input_text):
     return 'あなたの運勢は吉'"""
     
     def soulnumber(s):
-    while len(s) > 1:
-      s = str(sum(int(x) for x in frame['birthday']))
-      if int(s) % 11 == 0:
-        return s
-        return 'なるほど。
+      while len(s) > 1:
+        s = str(sum(int(x) for x in frame['birthday']))
+        if int(s) % 11 == 0:
+          return s
+       return 'なるほど。
 
   return output_text
 
