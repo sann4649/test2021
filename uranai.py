@@ -12,7 +12,7 @@ def chat(text, **kw):  #チャット用の関数（ここを書き換える）
 
 # アイコンの指定
 BOT_ICON = 'https://3.bp.blogspot.com/-qbORCFE5qhk/UmTBJwEYKjI/AAAAAAAAZYY/nbjieynFcLQ/s800/job_uranaishi.png'
-YOUR_ICON = 'https://4.bp.blogspot.com/-SC6_6x7MQnc/Wn1ZUkdcPxI/AAAAAAABKK8/qqHVlc8E7lEGsEwJ_J8H6Gp9RvfhTX67wCLcBGAs/s800/animal_smile_neko.png'
+YOUR_ICON = 'https://1.bp.blogspot.com/-ZOg0qAG4ewU/Xub_uw6q0DI/AAAAAAABZio/MshyuVBpHUgaOKJtL47LmVkCf5Vge6MQQCNcBGAsYHQ/s1600/pose_pien_uruuru_woman.png'
 
 def run_chat(chat = chat, start='ようこそ。あなたのソウルナンバーと選ばれたお好きな色で秘められた才能を占います。', **kw):
 
@@ -260,12 +260,12 @@ def uranai(input_text):
       #return 'あなたの運勢は大吉'
     #return 'あなたの運勢は吉'
     
-    def soulnumber(s):
-      while len(s) > 1:
-        s = str(sum(int(x) for x in frame['birthday']))
-        if int(s) % 11 == 0:
-          return s
-     return f'あなたのソウルナンバーは{s}です。'
+    while len(s) > 1:
+    s = str(sum(int(x) for x in frame['birthday']))
+    if int(frame['birthday']) % 11 == 0:
+    break
+      return 'なるほど。'
+      return 'frame['name']+さんのソウルナンバーは+frame['birthday']+です。'
 
   return output_text
 
