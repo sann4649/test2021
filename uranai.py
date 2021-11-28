@@ -255,8 +255,8 @@ def uranai(input_text):
  
   if 'name' in frame and 'birthday' in frame and 'color' not in frame:
     frame['asking'] = 'color' # 色をたずねる
-    return 'では最後に赤色、青色、黄色、白色、黒色、紫色、緑色、ピンク色、オレンジ色、黄緑色、水色、灰色、茶色からお好きな色を選び、選択肢の表記と同じ様に入力してください。'
-      return '例:赤色を選択した場合、赤色と入力してください。'
+      return 'では最後に赤色、青色、黄色、白色、黒色、紫色、緑色、ピンク色、オレンジ色、黄緑色、水色、灰色、茶色からお好きな色を選び、選択肢の表記と同じ様に入力してください。'
+    return '例:赤色を選択した場合、赤色と入力してください。'
 
   if 'name' in frame and 'birthday' in frame:
     # 占います
