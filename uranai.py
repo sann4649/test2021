@@ -266,10 +266,10 @@ def uranai(input_text):
        return 'なるほど。ソウルナンバーはです'
      return 'なるほど。ソウルナンバーはあああ'"""
     
-    def soulnumber(frame['birthday']):
-      while len(frame['birthday']) > 1:
-        frame['birthday'] = str(sum(int(x) for x in frame['birthday']))
-        if int(frame['birthday']) % 11 == 0:
+    def soulnumber(s):
+      while len(s) > 1:
+        s = str(sum(int(x) for x in frame['birthday']))
+        if int(s) % 11 == 0:
           break
       
   #return output_text
