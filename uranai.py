@@ -271,8 +271,8 @@ def uranai(input_text):
     return 'あなたの運勢は吉'"""
     
     if s==11:
-    return 's';
-  return '違う';
+      return 's';
+    return '違う';
   return output_text  
 
 def start():
