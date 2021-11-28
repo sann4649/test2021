@@ -264,8 +264,7 @@ def uranai(input_text):
      frame['birthday'] = str(sum(int(x) for x in frame['birthday']))
      if int(frame['birthday']) % 11 == 0:
         break
-          
-print('なるほど。ソウルナンバーはです。')
+          return 'なるほど。ソウルナンバーはです'
 
   return output_text
 
