@@ -271,8 +271,10 @@ def uranai(input_text):
         s = str(sum(int(x) for x in frame['birthday']))
         if int(s) % 11 == 0:
           break
-      return 'なるほど。ソウルナンバーはです'
-  return output_text
+      
+  #return output_text
+  
+printf("ソウルナンバーは")
 
 def start():
   run_chat(chat=uranai)
