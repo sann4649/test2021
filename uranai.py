@@ -266,7 +266,7 @@ def uranai(input_text):
         if int(s) % 11 == 0:
           break
 
-          printf("ソウルナンバーは%d,s);  
+          printf("ソウルナンバーは%d" , s);  
   return output_text  
 
 def start():
