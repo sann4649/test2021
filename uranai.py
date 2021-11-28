@@ -248,6 +248,8 @@ def uranai(input_text):
   if 'name' not in frame:
     frame['asking'] = 'name' # 名前をたずねる  
     return 'まずはあなたのニックネームを入力してください。'
+  
+  return 'frame['name']'
 
   if 'name' in frame and 'birthday' not in frame:
     frame['asking'] = 'birthday' # 誕生日をたずねる    
