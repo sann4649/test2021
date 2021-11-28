@@ -272,7 +272,7 @@ def uranai(input_text):
         if int(s) % 11 == 0:
           break
         return 'ソウルナンバーは{frame['birthday']}'    
-  #return output_text
+  return output_text
   
 
 def start():
