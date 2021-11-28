@@ -274,7 +274,7 @@ def uranai(input_text):
       
   #return output_text
   
-printf("ソウルナンバーは")
+        printf("ソウルナンバーは")
 
 def start():
   run_chat(chat=uranai)
