@@ -261,11 +261,11 @@ def uranai(input_text):
     #return 'あなたの運勢は吉'
     
     while len(s) > 1:
-    s = str(sum(int(x) for x in frame['birthday']))
-    if int(s) % 11 == 0:
-    break
-      return 'なるほど。'
-      return 's+さんのソウルナンバーは+s+です。'
+      s = str(sum(int(x) for x in frame['birthday']))
+      if int(s) % 11 == 0:
+        break
+        return 'なるほど。'
+        return 's+さんのソウルナンバーは+s+です。'
 
   return output_text
 
