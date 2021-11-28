@@ -262,9 +262,9 @@ def uranai(input_text):
     
     def soulnumber(s):
       while len(s) > 1:
-      s = str(sum(int(x) for x in frame['birthday']))
-      if int(s) % 11 == 0:
-       break
+        s = str(sum(int(x) for x in frame['birthday']))
+        if int(s) % 11 == 0:
+          return s
      return f'あなたのソウルナンバーは{s}です。'
 
   return output_text
