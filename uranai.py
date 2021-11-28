@@ -18,7 +18,7 @@ def run_chat(chat = chat, start='ようこそ。あなたのソウルナンバ�
 
   def display_bot(bot_text):
     with output.redirect_to_element('#output'):
-      bot_name = kw.get('bot_name', 'ボット')
+      bot_name = kw.get('bot_name', '占い師')
       bot_icon = kw.get('bot_icon', BOT_ICON)
       display(IPython.display.HTML(f'''
       <div class="sb-box">
@@ -255,17 +255,17 @@ def uranai(input_text):
 
   if 'name' in frame and 'birthday' in frame:
     # 占います
-    #number = hash(frame['name']+frame['birthday']) % 10
-    #if number > 5:
-      #return 'あなたの運勢は大吉'
-    #return 'あなたの運勢は吉'
+    number = hash(frame['name']+frame['birthday']) % 10
+    if number > 5:
+      return 'あなたの運勢は大吉'
+    return 'あなたの運勢は吉'
     
-    while len(s) > 1:
+    """while len(s) > 1:
       s = str(sum(int(x) for x in frame['birthday']))
       if int(s) % 11 == 0:
         break
         return 'なるほど。'
-        return 's+さんのソウルナンバーは+s+です。'
+        return 's+さんのソウルナンバーは+s+です。'"""
 
   return output_text
 
