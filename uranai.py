@@ -251,7 +251,7 @@ def uranai(input_text):
 
   if 'name' in frame and 'birthday' not in frame:
     frame['asking'] = 'birthday' # 誕生日をたずねる
-    return '次に生年月日を入力してください。'
+    return '次に生年月日を半角数字8桁で入力してください。例:2000年1月10日の場合20000110と入力してください。)'
  
   if 'name' in frame and 'birthday' in frame and 'color' not in frame:
     frame['asking'] = 'color' # 色をたずねる
