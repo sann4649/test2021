@@ -255,17 +255,17 @@ def uranai(input_text):
 
   if 'name' in frame and 'birthday' in frame:
     # 占います
-    number = hash(frame['name']+frame['birthday']) % 10
+    """number = hash(frame['name']+frame['birthday']) % 10
     if number > 5:
       return 'あなたの運勢は大吉'
-    return 'あなたの運勢は吉'
+    return 'あなたの運勢は吉'"""
     
-    """while len(s) > 1:
+    def soulnumber(s):
+    while len(s) > 1:
       s = str(sum(int(x) for x in frame['birthday']))
       if int(s) % 11 == 0:
-        break
-        return 'なるほど。'
-        return 's+さんのソウルナンバーは+s+です。'"""
+        return s
+        return 'なるほど。
 
   return output_text
 
