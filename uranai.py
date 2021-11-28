@@ -271,7 +271,7 @@ def uranai(input_text):
         s = str(sum(int(x) for x in frame['birthday']))
         if int(s) % 11 == 0:
           return 'なるほど。ソウルナンバーはです'
-      return 'なるほど。ソウルナンバーはあああ    
+      return 'なるほど。ソウルナンバーはあああ。'  
 
   return output_text
 
