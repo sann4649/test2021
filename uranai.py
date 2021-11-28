@@ -272,7 +272,7 @@ def uranai(input_text):
         if int(s) % 11 == 0:
           return 'なるほど。ソウルナンバーはです'
       return 'なるほど。ソウルナンバーはあああ。'  
-    return output_text
+  return output_text
 
 def start():
   run_chat(chat=uranai)
