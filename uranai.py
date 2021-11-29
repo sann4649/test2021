@@ -235,6 +235,12 @@ def run_chat(chat = chat, start='ようこそ。あなたのソウルナンバ�
   if start is not None:
     display_bot(start)
 
+#ソウルナンバー
+def soulnumber(s):
+  while len(s) > 1:
+    s = str(sum(int(x) for x in s))
+    if int(s) % 11 == 0:
+      break
 # フレーム 状態をもつ辞書
 # 'name', 'birthday', 'color', 'asking'
 frame = {}
@@ -263,11 +269,6 @@ def uranai(input_text):
     if number > 5:
       return 'あなたの運勢は大吉'
     return 'あなたの運勢は吉'"""
-    def soulnumber(s):
-      while len(s) > 1:
-        s = str(sum(int(x) for x in s))
-        if int(s) % 11 == 0:
-          break
     #s = int(s)
     if soulnumber(frame['birthday']) == 11:
       return 's'
