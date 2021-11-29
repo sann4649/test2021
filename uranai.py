@@ -270,7 +270,7 @@ def uranai(input_text):
       return 'あなたの運勢は大吉'
     return 'あなたの運勢は吉'"""
     #s = int(s)
-    if soulnumber(frame['birthday']) == 11:
+    if soulnumber(str(frame['birthday'])) == 11:
       return 's'
     return '違う'
   #return output_text
