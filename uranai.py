@@ -273,7 +273,7 @@ def uranai(input_text):
     if soulnumber(frame['birthday']) == 11:
       return 's'
     return '違う'
-  return output_text
+  #return output_text
 
 def start():
   run_chat(chat=uranai)
