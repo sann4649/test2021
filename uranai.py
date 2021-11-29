@@ -264,7 +264,7 @@ def uranai(input_text):
     return 'では最後に赤色、青色、黄色、白色、黒色、紫色、緑色、ピンク色、オレンジ色、黄緑色、水色、灰色、茶色からお好きな色を選び、選択肢の表記と同じ様に入力してください。例:赤色を選択した場合、赤色と入力してください。'
 
   if 'name' in frame and 'birthday' in frame and 'color' in frame:
-    # 占います
+    # 占います 
     """number = hash(frame['name']+frame['birthday']) % 10
     if number > 5:
       return 'あなたの運勢は大吉'
@@ -274,7 +274,7 @@ def uranai(input_text):
     if s == 11:
       return 's'
     return '違う'
-  return output_text  
+  return output_text
 
 def start():
   run_chat(chat=uranai)
