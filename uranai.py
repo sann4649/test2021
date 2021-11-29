@@ -255,7 +255,7 @@ def uranai(input_text):
   
   def soulnumber(s):
     while len(s) > 1:
-      s = str(sum(int(x) for x in frame['birthday']))
+      s = str(sum(int(x) for x in s))
       if int(s) % 11 == 0:
         break
  
@@ -271,7 +271,7 @@ def uranai(input_text):
     return 'あなたの運勢は吉'"""
     
     #s = int(s)
-    if s == 11:
+    if soulnumber(frame['birthday']) == 11:
       return 's'
     return '違う'
   return output_text
